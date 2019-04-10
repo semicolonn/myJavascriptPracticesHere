@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This simple application is created in JavaScript/ HTML & CSS.
+			Created on September 5th, 2018. By <hE.b>
+		-->
+	<style type="text/css">
+		body{
+			background-color: #273c75
+		}
+		div{
+			/* #f5f6fa*/
+			border-color: #c23616;
+			border-width: 12px;
+			border-style: inset;
+			width: 25%;
+			height: 50%;
+			background-color: #bdc3c7;
+			padding: 5% 1% 5% 1%;
+
+			}
+		h3{
+			color: #dcdde1;
+			background-color: #7f8fa6;
+			background-size: 50% auto;
+			width: 25%;
+		}
+	</style>
+	<title>Converter</title>
+	<script language="JavaScript">
+
+		//Work with textbox and button objects. Below is the codes!
+
+		function convertToCm(){
+
+			var storeInches= document.getElementById('getInches').value;
+			var convertTocm=2.54*storeInches;
+			alert(storeInches+" Inch "+" is "+ convertTocm+" cm ");
+	}
+	
+	</script>
+
+</head>
+<body>
+	<center>
+			<h3>Inches to Cm Conversion, App.</h3>
+	<div>
+		<input type="text" name="textInche" id="getInches" placeholder="Type Inche(s) here">
+		<input type="button" name="showToCm" value="Convert To cm" onclick=" return convertToCm();">
+	</div>
+	</center>
+</body>
+</html>
